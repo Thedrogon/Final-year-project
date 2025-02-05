@@ -3,6 +3,7 @@ public class UsaNetwork {
      @SuppressWarnings("unused")
     shortestPaths g = new shortestPaths();
      //24 node usa network
+     
              
     }
 }

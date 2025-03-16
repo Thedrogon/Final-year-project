@@ -75,32 +75,34 @@ public class shortestPaths {
 
         // Marking nodes in the first path as visited
         visited.addAll(firstPath);
-        visited.remove(destination); // Remove destination node
         visited.remove(source); // Remove source node
+        visited.remove(destination); // Remove destination node
 
         // Second shortest path (excluding visited nodes)
         List<Integer> secondPath = dijkstra(source, destination, true);
         
         if (secondPath.isEmpty()) {
             System.out.println("No second shortest path available.");
+            return;
         } else {
             System.out.println("Second shortest path: " + secondPath);
         }
         
         visited.addAll(secondPath);
-        visited.remove(destination); // Remove destination node
         visited.remove(source); // Remove source node
+        visited.remove(destination); // Remove destination node
 
         List<Integer> thirdPath = dijkstra(source, destination, true);
 
         if (thirdPath.isEmpty()) {
             System.out.println("No third  shortest path available.");
+            return ;
         } else {
             System.out.println("Third shortest path: " + thirdPath);
         }
     }
 
-    static class Edge {
+    static class Edge {     
         int to, weight;
         public Edge(int to, int weight) {
             this.to = to;

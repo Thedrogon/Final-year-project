@@ -61,6 +61,18 @@ public class PanEuropeanCost239 {
         
 
         
-        graph.findthreeShortestPaths(0, 4);
+       // graph.findthreeShortestPaths(0, 4);
+
+        for(int i= 0; i< 11; i++){
+            for (int j = 0;j<11;j++){
+                if (i==j){
+                    continue;
+                }
+
+                System.out.println("Source "+i+" Destination "+j);
+                graph.findthreeShortestPaths(i, j);
+                System.out.println("..............");
+            }
+        }
     }
 }

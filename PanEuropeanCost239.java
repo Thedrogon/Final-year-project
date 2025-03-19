@@ -1,7 +1,8 @@
 public class PanEuropeanCost239 {
 
     public static void main(String[] args) {
-        shortestPaths graph = new shortestPaths();
+        //shortestPaths graph = new shortestPaths();
+        ShortestPaths_new graph = new ShortestPaths_new();
          //COST 239 GRAPH
 
 
@@ -70,7 +71,8 @@ public class PanEuropeanCost239 {
                 }
 
                 System.out.println("Source "+i+" Destination "+j);
-                graph.findthreeShortestPaths(i, j);
+                graph.find3paths(i, j);
+                //graph.findthreeShortestPaths(i, j);
                 System.out.println("..............");
             }
         }

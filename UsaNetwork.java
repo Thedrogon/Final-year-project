@@ -1,3 +1,5 @@
+import pathfinding.shortestPaths;
+
 public class UsaNetwork {
     public static void main(String[] args) {
      @SuppressWarnings("unused")

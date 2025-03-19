@@ -1,3 +1,5 @@
+import pathfinding.ShortestPaths_new;
+
 public class PanEuropeanCost239 {
 
     public static void main(String[] args) {

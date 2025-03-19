@@ -1,3 +1,4 @@
+package topology;
 import pathfinding.shortestPaths;
 
 public class UsaNetwork {
